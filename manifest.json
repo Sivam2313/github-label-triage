@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Issue fixer",
+  "version": "1.0",
+
+  "description": "helps in issue trage",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "icons": {
+    "48": "icons/icons8-picture.svg"
+  },
+
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "storage"
+  ],
+
+  "background":{
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icons8-picture.svg",
+    "default_title": "Info",
+    "default_popup": "pop_up/interface.html"
+  }
+}
